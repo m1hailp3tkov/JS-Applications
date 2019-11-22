@@ -1,4 +1,5 @@
-const monkeys = [
+(() => {
+  const monkeys = [
   {
     id: 1,
     name: "Chim Chim",
@@ -35,4 +36,7 @@ const monkeys = [
     image: "./images/marcel.png",
     info: "All good things must come to an end, and Marcel's time on Friends was no exception. Everyone's favorite 'The Lion Sleeps Tonight'-obsessed Capuchin monkey got donated to a zoo by Ross after he began humping everything in sight. Later Ross finds out that Marcel was stolen from the zoo and is starring in a movie."
   }
-]
+];
+
+window.monkeys = monkeys;
+})();
