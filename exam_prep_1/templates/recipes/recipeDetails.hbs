@@ -1,0 +1,33 @@
+<div class="row form-layout p-5">
+            <div class="col-md-12">
+                <div class="recepieInfo">
+                    <div class="detailsFoodImage">
+                        <img src="{{recipeData.foodImageURL}}"
+                            alt="">
+                    </div>
+
+                    <div class="infoPack">
+                        <h3 class="my-3">{{recipeData.meal}}</h3>
+                        <p class="prep-method">{{recipeData.prepMethod}}</p>
+                        <p class="description">{{recipeData.description}}</p>
+                    </div>
+                    <div class="actions">
+                    {{#if isOwner}}
+                        <a class="btn btn-danger" href="#/delete/{{recipeData._id}}">Archive</a>
+                        <a class="btn btn-info" href="#/edit/{{recipeData._id}}">Edit</a>
+                    {{else}}
+                        <a class="btn btn-success" href="#/like/{{recipeData._id}}">{{recipeData.likesCounter}} Likes</a>
+                    {{/if}}
+                    </div>
+                </div>
+
+                <div class="detailsIngredients">
+                    <h3 class="my-3 ingredient">Ingredients</h3>
+                    <ul>
+                        {{#each recipeData.ingredients}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+</div>

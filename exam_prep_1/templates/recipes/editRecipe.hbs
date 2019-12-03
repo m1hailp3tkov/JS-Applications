@@ -1,0 +1,29 @@
+<form class="text-center p-5 form-layout" action="#/editConfirm/{{recipeData._id}}" method="GET" id="edit-receipt-form">
+            <p class="h4 mb-4">Edit Recipe</p>
+        
+            <input type="text" id="defaultRecepieEditMeal" name="meal" class="form-control mb-4" placeholder="Meal"
+                value="{{recipeData.meal}}">
+        
+            <input type="text" id="defaultRecepieEditIngredients" name="ingredients" class="form-control mb-4"
+                placeholder="Ingredients" value="{{recipeData.ingredients}}">
+        
+            <textarea type="text" id="defaultRecepieEditMethodOfPreparation" name="prepMethod" class="form-control mb-4"
+                placeholder="Method of preparation" >{{recipeData.prepMethod}}</textarea>
+        
+            <textarea type="text" id="defaultRecepieEditDescription" name="description" class="form-control mb-4"
+                placeholder="Description">{{recipeData.description}}</textarea>
+        
+            <input type="text" id="defaultRecepieEditFoodImageURL" name="foodImageURL" class="form-control mb-4"
+                placeholder="Food Image URL..." value="{{recipeData.foodImageURL}}">
+        
+            <select name="category">
+                <option selected disabled>Select category...</option>
+                <option imgUrl="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg">Vegetables and legumes/beans</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Fruits</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Grain Food</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Milk, cheese, eggs and alternatives</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Lean meats and poultry, fish and alternatives</option>
+            </select>
+            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Edit it</button>
+        
+</form>

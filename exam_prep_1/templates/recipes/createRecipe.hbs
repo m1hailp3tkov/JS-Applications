@@ -1,0 +1,28 @@
+<form class="text-center p-5 form-layout" action="#/create" method="POST" id="share-receipt-form">
+            <p class="h4 mb-4">Share Recipe</p>
+
+            <input type="text" id="defaultRecepieShareMeal" name="meal" class="form-control mb-4" placeholder="Meal">
+
+            <input type="text" id="defaultRecepieShareIngredients" name="ingredients" class="form-control mb-4"
+                placeholder="Ingredients">
+
+            <textarea type="text" id="defaultRecepieShareMethodOfPreparation" name="prepMethod"
+                class="form-control mb-4" placeholder="Method of preparation"></textarea>
+
+            <textarea type="text" id="defaultRecepieShareDescription" name="description" class="form-control mb-4"
+                placeholder="Description"></textarea>
+
+            <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" class="form-control mb-4"
+                placeholder="Food Image URL...">
+
+            <select name="category">
+                <option disabled>Select category...</option>
+                <option imgUrl="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg">Vegetables and legumes/beans</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Fruits</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Grain Food</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Milk, cheese, eggs and alternatives</option>
+                <option imgUrl="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Lean meats and poultry, fish and alternatives</option>
+            </select>
+
+            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Share it</button>
+</form>
