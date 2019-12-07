@@ -21,6 +21,7 @@ export function updateContext(context)
     if(getData('authToken'))
     {
         let userInfo = JSON.parse(getData('userInfo'));
+        context.userInfo = userInfo;
         context.loggedIn = true;
     }
 }
@@ -30,6 +31,13 @@ export function displayMessage(msg, status)
     let notificationBox = document.getElementById(`${status}Box`);
     notificationBox.style.display = 'block';
     notificationBox.textContent = msg;
+    
+    setTimeout(function() 
+    {
+        notificationBox.style.display = 'none';
+    }, 5000);
+
+    notificationBox.onclick = function() {notificationBox.style.display = 'none';}
 }
 
 export function hideMessage(status)

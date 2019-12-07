@@ -1,6 +1,6 @@
 //TODO replace appKey and appSecret
-export const appKey = "kid_BJNNEcX6S";
-export const appSecret = "0017b630525447f0a3689b68497eb8c4";
+export const appKey = "kid_B1SlXAuaH";
+export const appSecret = "7c79c3d2912e41a3b4811b987294e0ce";
 
 function saveData(key, value) {
   localStorage.setItem(key+appKey, JSON.stringify(value));
